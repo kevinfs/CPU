@@ -26,7 +26,7 @@ begin
 
 	-- PROCESS
 
-	process(A, B)
+	process(A, B, CARRY_IN)
 	begin
 		assert now < 80 ns
 			report "END OF SIMULATION"
