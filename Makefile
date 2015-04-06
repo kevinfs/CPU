@@ -1,4 +1,4 @@
-all: half_adder half_adder_utest full_adder full_adder_utest generic_full_adder generic_full_adder_utest hello_world
+all: half_adder half_adder_utest full_adder full_adder_utest generic_full_adder generic_full_adder_utest d_latch d_latch_utest hello_world
 
 # RUN THE SIMULATION
 
@@ -11,6 +11,7 @@ test: all
 	ghdl -r half_adder_utest --vcd=vcd/half_adder_utest.vcd
 	ghdl -r full_adder_utest --vcd=vcd/full_adder_utest.vcd
 	ghdl -r generic_full_adder_utest --vcd=vcd/generic_full_adder_utest.vcd
+	ghdl -r d_latch_utest --vcd=vcd/d_latch_utest.vcd
 
 # HALF ADDER
 
@@ -41,6 +42,16 @@ generic_full_adder: generic_full_adder.vhdl
 generic_full_adder_utest: generic_full_adder_utest.vhdl
 	ghdl -a generic_full_adder_utest.vhdl
 	ghdl -e generic_full_adder_utest
+
+# D LATCH
+
+d_latch: d_latch.vhdl
+	ghdl -a d_latch.vhdl
+	ghdl -e d_latch
+
+d_latch_utest: d_latch_utest.vhdl
+	ghdl -a d_latch_utest.vhdl
+	ghdl -e d_latch_utest
 
 # WORKON
 
