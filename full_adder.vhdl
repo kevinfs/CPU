@@ -34,7 +34,7 @@ begin
 
 	-- PROCESS
 
-	process
+	process(A, B, CARRY_IN)
 	begin
 		CARRY_OUT <= HA1_CARRY_OUT OR HA2_CARRY_OUT;
 	end process;
