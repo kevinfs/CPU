@@ -4,7 +4,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 entity half_adder is
 	port (
 		A, B : in std_logic;
-		SUM, CARRY : out std_logic
+		SUM, CARRY : out std_logic := '0'
 	);
 end entity half_adder;
 
