@@ -1,4 +1,4 @@
-all: half_adder half_adder_utest full_adder full_adder_utest hello_world
+all: half_adder half_adder_utest full_adder full_adder_utest generic_full_adder generic_full_adder_utest hello_world
 
 # RUN THE SIMULATION
 
@@ -10,6 +10,7 @@ run:
 test: all
 	ghdl -r half_adder_utest --vcd=vcd/half_adder_utest.vcd
 	ghdl -r full_adder_utest --vcd=vcd/full_adder_utest.vcd
+	ghdl -r generic_full_adder_utest --vcd=vcd/generic_full_adder_utest.vcd
 
 # HALF ADDER
 
@@ -30,6 +31,16 @@ full_adder: full_adder.vhdl
 full_adder_utest: full_adder_utest.vhdl
 	ghdl -a full_adder_utest.vhdl
 	ghdl -e full_adder_utest
+
+# GENERIC FULL ADDER
+
+generic_full_adder: generic_full_adder.vhdl
+	ghdl -a generic_full_adder.vhdl
+	ghdl -e generic_full_adder
+
+generic_full_adder_utest: generic_full_adder_utest.vhdl
+	ghdl -a generic_full_adder_utest.vhdl
+	ghdl -e generic_full_adder_utest
 
 # WORKON
 

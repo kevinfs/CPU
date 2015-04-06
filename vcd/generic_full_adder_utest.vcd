@@ -1,0 +1,1340 @@
+$date
+  Mon Apr  6 20:22:15 2015
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 16 ! a[15:0] $end
+$var reg 16 " b[15:0] $end
+$var reg 16 # result[15:0] $end
+$var reg 1 $ carry_in $end
+$var reg 1 % carry_out $end
+$scope module dut $end
+$var reg 16 & a[15:0] $end
+$var reg 16 ' b[15:0] $end
+$var reg 1 ( carry_in $end
+$var reg 16 ) sum[15:0] $end
+$var reg 1 * carry_out $end
+$var reg 17 + fa_carry_out[16:0] $end
+$scope module full_adders_generation(0) $end
+$scope module full_adders $end
+$var reg 1 , a $end
+$var reg 1 - b $end
+$var reg 1 . carry_in $end
+$var reg 1 / sum $end
+$var reg 1 0 carry_out $end
+$var reg 1 1 ha1_carry_out $end
+$var reg 1 2 ha2_sum $end
+$var reg 1 3 ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 4 a $end
+$var reg 1 5 b $end
+$var reg 1 6 sum $end
+$var reg 1 7 carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 8 a $end
+$var reg 1 9 b $end
+$var reg 1 : sum $end
+$var reg 1 ; carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(1) $end
+$scope module full_adders $end
+$var reg 1 < a $end
+$var reg 1 = b $end
+$var reg 1 > carry_in $end
+$var reg 1 ? sum $end
+$var reg 1 @ carry_out $end
+$var reg 1 A ha1_carry_out $end
+$var reg 1 B ha2_sum $end
+$var reg 1 C ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 D a $end
+$var reg 1 E b $end
+$var reg 1 F sum $end
+$var reg 1 G carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 H a $end
+$var reg 1 I b $end
+$var reg 1 J sum $end
+$var reg 1 K carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(2) $end
+$scope module full_adders $end
+$var reg 1 L a $end
+$var reg 1 M b $end
+$var reg 1 N carry_in $end
+$var reg 1 O sum $end
+$var reg 1 P carry_out $end
+$var reg 1 Q ha1_carry_out $end
+$var reg 1 R ha2_sum $end
+$var reg 1 S ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 T a $end
+$var reg 1 U b $end
+$var reg 1 V sum $end
+$var reg 1 W carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 X a $end
+$var reg 1 Y b $end
+$var reg 1 Z sum $end
+$var reg 1 [ carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(3) $end
+$scope module full_adders $end
+$var reg 1 \ a $end
+$var reg 1 ] b $end
+$var reg 1 ^ carry_in $end
+$var reg 1 _ sum $end
+$var reg 1 ` carry_out $end
+$var reg 1 a ha1_carry_out $end
+$var reg 1 b ha2_sum $end
+$var reg 1 c ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 d a $end
+$var reg 1 e b $end
+$var reg 1 f sum $end
+$var reg 1 g carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 h a $end
+$var reg 1 i b $end
+$var reg 1 j sum $end
+$var reg 1 k carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(4) $end
+$scope module full_adders $end
+$var reg 1 l a $end
+$var reg 1 m b $end
+$var reg 1 n carry_in $end
+$var reg 1 o sum $end
+$var reg 1 p carry_out $end
+$var reg 1 q ha1_carry_out $end
+$var reg 1 r ha2_sum $end
+$var reg 1 s ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 t a $end
+$var reg 1 u b $end
+$var reg 1 v sum $end
+$var reg 1 w carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 x a $end
+$var reg 1 y b $end
+$var reg 1 z sum $end
+$var reg 1 { carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(5) $end
+$scope module full_adders $end
+$var reg 1 | a $end
+$var reg 1 } b $end
+$var reg 1 !" carry_in $end
+$var reg 1 "" sum $end
+$var reg 1 #" carry_out $end
+$var reg 1 $" ha1_carry_out $end
+$var reg 1 %" ha2_sum $end
+$var reg 1 &" ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 '" a $end
+$var reg 1 (" b $end
+$var reg 1 )" sum $end
+$var reg 1 *" carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 +" a $end
+$var reg 1 ," b $end
+$var reg 1 -" sum $end
+$var reg 1 ." carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(6) $end
+$scope module full_adders $end
+$var reg 1 /" a $end
+$var reg 1 0" b $end
+$var reg 1 1" carry_in $end
+$var reg 1 2" sum $end
+$var reg 1 3" carry_out $end
+$var reg 1 4" ha1_carry_out $end
+$var reg 1 5" ha2_sum $end
+$var reg 1 6" ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 7" a $end
+$var reg 1 8" b $end
+$var reg 1 9" sum $end
+$var reg 1 :" carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 ;" a $end
+$var reg 1 <" b $end
+$var reg 1 =" sum $end
+$var reg 1 >" carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(7) $end
+$scope module full_adders $end
+$var reg 1 ?" a $end
+$var reg 1 @" b $end
+$var reg 1 A" carry_in $end
+$var reg 1 B" sum $end
+$var reg 1 C" carry_out $end
+$var reg 1 D" ha1_carry_out $end
+$var reg 1 E" ha2_sum $end
+$var reg 1 F" ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 G" a $end
+$var reg 1 H" b $end
+$var reg 1 I" sum $end
+$var reg 1 J" carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 K" a $end
+$var reg 1 L" b $end
+$var reg 1 M" sum $end
+$var reg 1 N" carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(8) $end
+$scope module full_adders $end
+$var reg 1 O" a $end
+$var reg 1 P" b $end
+$var reg 1 Q" carry_in $end
+$var reg 1 R" sum $end
+$var reg 1 S" carry_out $end
+$var reg 1 T" ha1_carry_out $end
+$var reg 1 U" ha2_sum $end
+$var reg 1 V" ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 W" a $end
+$var reg 1 X" b $end
+$var reg 1 Y" sum $end
+$var reg 1 Z" carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 [" a $end
+$var reg 1 \" b $end
+$var reg 1 ]" sum $end
+$var reg 1 ^" carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(9) $end
+$scope module full_adders $end
+$var reg 1 _" a $end
+$var reg 1 `" b $end
+$var reg 1 a" carry_in $end
+$var reg 1 b" sum $end
+$var reg 1 c" carry_out $end
+$var reg 1 d" ha1_carry_out $end
+$var reg 1 e" ha2_sum $end
+$var reg 1 f" ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 g" a $end
+$var reg 1 h" b $end
+$var reg 1 i" sum $end
+$var reg 1 j" carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 k" a $end
+$var reg 1 l" b $end
+$var reg 1 m" sum $end
+$var reg 1 n" carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(10) $end
+$scope module full_adders $end
+$var reg 1 o" a $end
+$var reg 1 p" b $end
+$var reg 1 q" carry_in $end
+$var reg 1 r" sum $end
+$var reg 1 s" carry_out $end
+$var reg 1 t" ha1_carry_out $end
+$var reg 1 u" ha2_sum $end
+$var reg 1 v" ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 w" a $end
+$var reg 1 x" b $end
+$var reg 1 y" sum $end
+$var reg 1 z" carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 {" a $end
+$var reg 1 |" b $end
+$var reg 1 }" sum $end
+$var reg 1 !# carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(11) $end
+$scope module full_adders $end
+$var reg 1 "# a $end
+$var reg 1 ## b $end
+$var reg 1 $# carry_in $end
+$var reg 1 %# sum $end
+$var reg 1 &# carry_out $end
+$var reg 1 '# ha1_carry_out $end
+$var reg 1 (# ha2_sum $end
+$var reg 1 )# ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 *# a $end
+$var reg 1 +# b $end
+$var reg 1 ,# sum $end
+$var reg 1 -# carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 .# a $end
+$var reg 1 /# b $end
+$var reg 1 0# sum $end
+$var reg 1 1# carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(12) $end
+$scope module full_adders $end
+$var reg 1 2# a $end
+$var reg 1 3# b $end
+$var reg 1 4# carry_in $end
+$var reg 1 5# sum $end
+$var reg 1 6# carry_out $end
+$var reg 1 7# ha1_carry_out $end
+$var reg 1 8# ha2_sum $end
+$var reg 1 9# ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 :# a $end
+$var reg 1 ;# b $end
+$var reg 1 <# sum $end
+$var reg 1 =# carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 ># a $end
+$var reg 1 ?# b $end
+$var reg 1 @# sum $end
+$var reg 1 A# carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(13) $end
+$scope module full_adders $end
+$var reg 1 B# a $end
+$var reg 1 C# b $end
+$var reg 1 D# carry_in $end
+$var reg 1 E# sum $end
+$var reg 1 F# carry_out $end
+$var reg 1 G# ha1_carry_out $end
+$var reg 1 H# ha2_sum $end
+$var reg 1 I# ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 J# a $end
+$var reg 1 K# b $end
+$var reg 1 L# sum $end
+$var reg 1 M# carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 N# a $end
+$var reg 1 O# b $end
+$var reg 1 P# sum $end
+$var reg 1 Q# carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(14) $end
+$scope module full_adders $end
+$var reg 1 R# a $end
+$var reg 1 S# b $end
+$var reg 1 T# carry_in $end
+$var reg 1 U# sum $end
+$var reg 1 V# carry_out $end
+$var reg 1 W# ha1_carry_out $end
+$var reg 1 X# ha2_sum $end
+$var reg 1 Y# ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 Z# a $end
+$var reg 1 [# b $end
+$var reg 1 \# sum $end
+$var reg 1 ]# carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 ^# a $end
+$var reg 1 _# b $end
+$var reg 1 `# sum $end
+$var reg 1 a# carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adders_generation(15) $end
+$scope module full_adders $end
+$var reg 1 b# a $end
+$var reg 1 c# b $end
+$var reg 1 d# carry_in $end
+$var reg 1 e# sum $end
+$var reg 1 f# carry_out $end
+$var reg 1 g# ha1_carry_out $end
+$var reg 1 h# ha2_sum $end
+$var reg 1 i# ha2_carry_out $end
+$scope module ha1 $end
+$var reg 1 j# a $end
+$var reg 1 k# b $end
+$var reg 1 l# sum $end
+$var reg 1 m# carry $end
+$upscope $end
+$scope module ha2 $end
+$var reg 1 n# a $end
+$var reg 1 o# b $end
+$var reg 1 p# sum $end
+$var reg 1 q# carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+bUUUUUUUUUUUUUUUU !
+bUUUUUUUUUUUUUUUU "
+bUUUUUUUUUUUUUUUU #
+0$
+U%
+bUUUUUUUUUUUUUUUU &
+bUUUUUUUUUUUUUUUU '
+0(
+bUUUUUUUUUUUUUUUU )
+U*
+bUUUUUUUUUUUUUUUU0 +
+U,
+U-
+0.
+U/
+U0
+01
+U2
+U3
+04
+U5
+U6
+07
+U8
+U9
+U:
+U;
+U<
+U=
+U>
+U?
+U@
+UA
+UB
+UC
+UD
+UE
+UF
+UG
+UH
+UI
+UJ
+UK
+UL
+UM
+UN
+UO
+UP
+UQ
+UR
+US
+UT
+UU
+UV
+UW
+UX
+UY
+UZ
+U[
+U\
+U]
+U^
+U_
+U`
+Ua
+Ub
+Uc
+Ud
+Ue
+Uf
+Ug
+Uh
+Ui
+Uj
+Uk
+Ul
+Um
+Un
+Uo
+Up
+Uq
+Ur
+Us
+Ut
+Uu
+Uv
+Uw
+Ux
+Uy
+Uz
+U{
+U|
+U}
+U!"
+U""
+U#"
+U$"
+U%"
+U&"
+U'"
+U("
+U)"
+U*"
+U+"
+U,"
+U-"
+U."
+U/"
+U0"
+U1"
+U2"
+U3"
+U4"
+U5"
+U6"
+U7"
+U8"
+U9"
+U:"
+U;"
+U<"
+U="
+U>"
+U?"
+U@"
+UA"
+UB"
+UC"
+UD"
+UE"
+UF"
+UG"
+UH"
+UI"
+UJ"
+UK"
+UL"
+UM"
+UN"
+UO"
+UP"
+UQ"
+UR"
+US"
+UT"
+UU"
+UV"
+UW"
+UX"
+UY"
+UZ"
+U["
+U\"
+U]"
+U^"
+U_"
+U`"
+Ua"
+Ub"
+Uc"
+Ud"
+Ue"
+Uf"
+Ug"
+Uh"
+Ui"
+Uj"
+Uk"
+Ul"
+Um"
+Un"
+Uo"
+Up"
+Uq"
+Ur"
+Us"
+Ut"
+Uu"
+Uv"
+Uw"
+Ux"
+Uy"
+Uz"
+U{"
+U|"
+U}"
+U!#
+U"#
+U##
+U$#
+U%#
+U&#
+U'#
+U(#
+U)#
+U*#
+U+#
+U,#
+U-#
+U.#
+U/#
+U0#
+U1#
+U2#
+U3#
+U4#
+U5#
+U6#
+U7#
+U8#
+U9#
+U:#
+U;#
+U<#
+U=#
+U>#
+U?#
+U@#
+UA#
+UB#
+UC#
+UD#
+UE#
+UF#
+UG#
+UH#
+UI#
+UJ#
+UK#
+UL#
+UM#
+UN#
+UO#
+UP#
+UQ#
+UR#
+US#
+UT#
+UU#
+UV#
+UW#
+UX#
+UY#
+UZ#
+U[#
+U\#
+U]#
+U^#
+U_#
+U`#
+Ua#
+Ub#
+Uc#
+Ud#
+Ue#
+Uf#
+Ug#
+Uh#
+Ui#
+Uj#
+Uk#
+Ul#
+Um#
+Un#
+Uo#
+Up#
+Uq#
+#1000000
+b0000000000000000 !
+b0000000000000000 "
+b0000000000000000 #
+0%
+b0000000000000000 &
+b0000000000000000 '
+b0000000000000000 )
+0*
+b00000000000000000 +
+0,
+0-
+0/
+00
+02
+03
+05
+06
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0!"
+0""
+0#"
+0$"
+0%"
+0&"
+0'"
+0("
+0)"
+0*"
+0+"
+0,"
+0-"
+0."
+0/"
+00"
+01"
+02"
+03"
+04"
+05"
+06"
+07"
+08"
+09"
+0:"
+0;"
+0<"
+0="
+0>"
+0?"
+0@"
+0A"
+0B"
+0C"
+0D"
+0E"
+0F"
+0G"
+0H"
+0I"
+0J"
+0K"
+0L"
+0M"
+0N"
+0O"
+0P"
+0Q"
+0R"
+0S"
+0T"
+0U"
+0V"
+0W"
+0X"
+0Y"
+0Z"
+0["
+0\"
+0]"
+0^"
+0_"
+0`"
+0a"
+0b"
+0c"
+0d"
+0e"
+0f"
+0g"
+0h"
+0i"
+0j"
+0k"
+0l"
+0m"
+0n"
+0o"
+0p"
+0q"
+0r"
+0s"
+0t"
+0u"
+0v"
+0w"
+0x"
+0y"
+0z"
+0{"
+0|"
+0}"
+0!#
+0"#
+0##
+0$#
+0%#
+0&#
+0'#
+0(#
+0)#
+0*#
+0+#
+0,#
+0-#
+0.#
+0/#
+00#
+01#
+02#
+03#
+04#
+05#
+06#
+07#
+08#
+09#
+0:#
+0;#
+0<#
+0=#
+0>#
+0?#
+0@#
+0A#
+0B#
+0C#
+0D#
+0E#
+0F#
+0G#
+0H#
+0I#
+0J#
+0K#
+0L#
+0M#
+0N#
+0O#
+0P#
+0Q#
+0R#
+0S#
+0T#
+0U#
+0V#
+0W#
+0X#
+0Y#
+0Z#
+0[#
+0\#
+0]#
+0^#
+0_#
+0`#
+0a#
+0b#
+0c#
+0d#
+0e#
+0f#
+0g#
+0h#
+0i#
+0j#
+0k#
+0l#
+0m#
+0n#
+0o#
+0p#
+0q#
+#2000000
+b0001000000000000 !
+b0001000000000000 #
+b0001000000000000 &
+b0001000000000000 )
+12#
+15#
+18#
+1;#
+1<#
+1>#
+1@#
+#3000000
+b0001000000000001 #
+1$
+1(
+b0001000000000001 )
+b00000000000000001 +
+1.
+1/
+14
+16
+#4000000
+b0001000000000000 "
+b0010000000000000 #
+0$
+b0001000000000000 '
+0(
+b0010000000000000 )
+b00010000000000000 +
+0.
+0/
+04
+06
+13#
+05#
+16#
+08#
+19#
+0;#
+0<#
+1?#
+0@#
+1A#
+1D#
+1E#
+1J#
+1L#
+#5000000
+#6000000
+b0000000000010100 !
+b0001000000010100 #
+b0000000000010100 &
+b0001000000010100 )
+b00000000000000000 +
+1L
+1O
+1R
+1U
+1V
+1X
+1Z
+1l
+1o
+1r
+1u
+1v
+1x
+1z
+02#
+15#
+06#
+18#
+09#
+1;#
+1<#
+0>#
+1@#
+0A#
+0D#
+0E#
+0J#
+0L#
+#8000000
+b0000000000001000 "
+b0000000000011100 #
+b0000000000001000 '
+b0000000000011100 )
+1]
+1_
+1b
+1e
+1f
+1i
+1j
+03#
+05#
+08#
+0;#
+0<#
+0?#
+0@#
+#10000000
+b1111111111111111 !
+b0000000000000111 #
+1%
+b1111111111111111 &
+b0000000000000111 )
+1*
+b11111111111110000 +
+1,
+1/
+12
+15
+16
+18
+1:
+1<
+1?
+1B
+1E
+1F
+1H
+1J
+1\
+0_
+1`
+0b
+1c
+0e
+0f
+1h
+0j
+1k
+1n
+0o
+1p
+1q
+1t
+0v
+1w
+1|
+1!"
+0""
+1#"
+1$"
+1%"
+1'"
+1("
+0)"
+1*"
+1+"
+1-"
+1/"
+11"
+02"
+13"
+14"
+15"
+17"
+18"
+09"
+1:"
+1;"
+1="
+1?"
+1A"
+0B"
+1C"
+1D"
+1E"
+1G"
+1H"
+0I"
+1J"
+1K"
+1M"
+1O"
+1Q"
+0R"
+1S"
+1T"
+1U"
+1W"
+1X"
+0Y"
+1Z"
+1["
+1]"
+1_"
+1a"
+0b"
+1c"
+1d"
+1e"
+1g"
+1h"
+0i"
+1j"
+1k"
+1m"
+1o"
+1q"
+0r"
+1s"
+1t"
+1u"
+1w"
+1x"
+0y"
+1z"
+1{"
+1}"
+1"#
+1$#
+0%#
+1&#
+1'#
+1(#
+1*#
+1+#
+0,#
+1-#
+1.#
+10#
+12#
+14#
+05#
+16#
+17#
+18#
+1:#
+1;#
+0<#
+1=#
+1>#
+1@#
+1B#
+1D#
+0E#
+1F#
+1G#
+1H#
+1J#
+1K#
+0L#
+1M#
+1N#
+1P#
+1R#
+1T#
+0U#
+1V#
+1W#
+1X#
+1Z#
+1[#
+0\#
+1]#
+1^#
+1`#
+1b#
+1d#
+0e#
+1f#
+1g#
+1h#
+1j#
+1k#
+0l#
+1m#
+1n#
+1p#
+#12000000
+b0000000000000001 "
+b0000000000000000 #
+1%
+b0000000000000001 '
+b0000000000000000 )
+1*
+b11111111111111110 +
+1-
+0/
+10
+02
+13
+05
+06
+19
+0:
+1;
+1>
+0?
+1@
+1A
+1D
+0F
+1G
+1N
+0O
+1P
+1Q
+1T
+0V
+1W
+0]
+1^
+0_
+1`
+1a
+1b
+0c
+1d
+1e
+0f
+1g
+0i
+1j
+0k
+1n
+0o
+1p
+1q
+1t
+0v
+1w
+1!"
+0""
+1#"
+1$"
+1'"
+0)"
+1*"
+11"
+02"
+13"
+14"
+17"
+09"
+1:"
+1A"
+0B"
+1C"
+1D"
+1G"
+0I"
+1J"
+1Q"
+0R"
+1S"
+1T"
+1W"
+0Y"
+1Z"
+1a"
+0b"
+1c"
+1d"
+1g"
+0i"
+1j"
+1q"
+0r"
+1s"
+1t"
+1w"
+0y"
+1z"
+1$#
+0%#
+1&#
+1'#
+1*#
+0,#
+1-#
+14#
+05#
+16#
+17#
+1:#
+0<#
+1=#
+1D#
+0E#
+1F#
+1G#
+1J#
+0L#
+1M#
+1T#
+0U#
+1V#
+1W#
+1Z#
+0\#
+1]#
+1d#
+0e#
+1f#
+1g#
+1j#
+0l#
+1m#
