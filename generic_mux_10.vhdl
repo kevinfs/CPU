@@ -21,7 +21,7 @@ begin
 	process(I0, I1, I2, I3, I4, I5, I6, I7, I8, I9, SEL)
 	begin
 
-		-- use case statement
+		-- CASE ON SEL
 		case SEL is
 			when "0000" =>	O <= I0;
 			when "0001" =>	O <= I1;
@@ -33,7 +33,7 @@ begin
 			when "0111" =>	O <= I7;
 			when "1000" =>	O <= I8;
 			when "1001" =>	O <= I9;
-			when others =>	O <= "ZZZZZZZZZZZZZZZZ";
+			when others =>	O <= (others => 'Z');
 		end case;
 
 	end process;
