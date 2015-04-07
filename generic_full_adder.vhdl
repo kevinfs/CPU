@@ -26,7 +26,7 @@ architecture generic_full_adder of generic_full_adder is
 
 	-- SIGNALS
 
-	signal FA_CARRY_OUT: std_logic_vector(SIZE downto 0);
+	signal FA_CARRY_OUT: std_logic_vector(SIZE downto 0) := (others => '0');
 
 begin
 
