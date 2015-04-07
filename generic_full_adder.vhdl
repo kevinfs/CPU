@@ -41,11 +41,4 @@ begin
 		full_adders : full_adder port map(A(I), B(I), FA_CARRY_OUT(I), SUM(I), FA_CARRY_OUT(I+1));
 	end generate;
 
-	-- PROCESS
-
-	--process(HA1_CARRY_OUT, HA2_CARRY_OUT)
-	--begin
-	--	CARRY_OUT <= HA1_CARRY_OUT OR HA2_CARRY_OUT;
-	--end process;
-
 end architecture generic_full_adder;

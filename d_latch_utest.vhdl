@@ -6,6 +6,8 @@ end entity d_latch_utest;
 
 architecture d_latch_utest of d_latch_utest is
 
+	-- SIGNALS
+
 	signal I: std_logic := '0';
 	signal W: std_logic := '0';
 	signal O: std_logic := '0';
