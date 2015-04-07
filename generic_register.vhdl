@@ -23,28 +23,12 @@ architecture generic_register of generic_register is
 		);
 	end component;
 
-	-- SIGNALS
-
-	signal HA1_CARRY_OUT: std_logic;
-	signal HA2_SUM: std_logic;
-	signal HA2_CARRY_OUT: std_logic;
-
 begin
 
 	-- ROUTING
 
-	full_adders_generation : for I in 0 to SIZE-1 generate
-		full_adders : full_adder port map(A(I), B(I), FA_CARRY_OUT(I), SUM(I), FA_CARRY_OUT(I+1));
+	d_latches_generation : for N in 0 to SIZE-1 generate
+		d_latches : d_latch port map(I(N), W, O(N));
 	end generate;
-
-	HA1 : d_latch port map(CARRY_IN, HA2_SUM, SUM, HA1_CARRY_OUT);
-	HA2 : d_latch port map(A, B, HA2_SUM, HA2_CARRY_OUT);
-
-	-- PROCESS
-
-	process(HA1_CARRY_OUT, HA2_CARRY_OUT)
-	begin
-		CARRY_OUT <= HA1_CARRY_OUT OR HA2_CARRY_OUT;
-	end process;
 
 end architecture generic_register;
