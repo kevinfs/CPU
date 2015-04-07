@@ -1,4 +1,4 @@
-all: half_adder half_adder_utest full_adder full_adder_utest generic_full_adder generic_full_adder_utest d_latch d_latch_utest generic_register generic_register_utest generic_mux_10 generic_mux_10_utest generic_alu generic_alu_utest hello_world
+all: half_adder half_adder_utest full_adder full_adder_utest generic_full_adder generic_full_adder_utest d_latch d_latch_utest generic_register generic_register_utest generic_mux_10 generic_mux_10_utest generic_alu generic_alu_utest generic_shifter generic_shifter_utest hello_world
 
 # RUN THE SIMULATION
 
@@ -15,6 +15,7 @@ test: all
 	ghdl -r generic_register_utest --vcd=vcd/generic_register_utest.vcd
 	ghdl -r generic_mux_10_utest --vcd=vcd/generic_mux_10_utest.vcd
 	ghdl -r generic_alu_utest --vcd=vcd/generic_alu_utest.vcd
+	ghdl -r generic_shifter_utest --vcd=vcd/generic_shifter_utest.vcd
 
 # HALF ADDER
 
@@ -85,6 +86,16 @@ generic_alu: generic_alu.vhdl
 generic_alu_utest: generic_alu_utest.vhdl
 	ghdl -a generic_alu_utest.vhdl
 	ghdl -e generic_alu_utest
+
+# GENERIC SHIFTER
+
+generic_shifter: generic_shifter.vhdl
+	ghdl -a generic_shifter.vhdl
+	ghdl -e generic_shifter
+
+generic_shifter_utest: generic_shifter_utest.vhdl
+	ghdl -a generic_shifter_utest.vhdl
+	ghdl -e generic_shifter_utest
 
 # WORKON
 
