@@ -28,6 +28,16 @@ architecture generic_alu of generic_alu is
 		);
 	end component;
 
+	component generic_shifter is
+		generic(
+			SIZE : integer := 16
+		);
+		port (
+			A : in std_logic_vector(SIZE-1 downto 0);
+			O : out std_logic_vector(SIZE-1 downto 0)
+		);
+	end component;
+
 	-- SIGNALS
 
 	signal ADD: std_logic_vector(SIZE-1 downto 0);
@@ -53,6 +63,8 @@ begin
 	FA_ADD : generic_full_adder generic map(SIZE) port map(A, B, '0', ADD, OVERFLOW);
 	FA_SUB : generic_full_adder generic map(SIZE) port map(A, CPM_B, '0', SUB, UNDERFLOW_TMP);
 	FA_CPM : generic_full_adder generic map(SIZE) port map(ONE, NOT_B, '0', CPM_B);
+
+	SH_SHI : generic_shifter generic map(SIZE) port map(A, SHI);
 
 	-- PROCESS
 
