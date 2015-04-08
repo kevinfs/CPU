@@ -52,9 +52,10 @@ architecture cpu of cpu is
 			INSTRUCTION : in std_logic_vector(8 downto 0);
 			RUN, RESET, CLOCK : in std_logic;
 			DONE : out std_logic;
-			SEL_ALU : in std_logic_vector(1 downto 0);
-			SEL_MUX : in std_logic_vector(3 downto 0);
-			W : out std_logic_vector(9 downto 0)
+			SEL_ALU : out std_logic_vector(1 downto 0);
+			SEL_MUX : out std_logic_vector(3 downto 0);
+			W : out std_logic_vector(9 downto 0);
+			FETCH : out std_logic
 		);
 	end component;
 
@@ -63,7 +64,8 @@ architecture cpu of cpu is
 	signal W: std_logic_vector(9 downto 0);
 
 	signal DATA_OUT_INTERNAL: std_logic_vector(15 downto 0);
-	signal DONE_INTERNAL: std_logic;
+	signal DONE_INTERNAL: std_logic := '1';
+	signal FETCH: std_logic;
 
 	signal R_TO_MUX_0: std_logic_vector(15 downto 0);
 	signal R_TO_MUX_1: std_logic_vector(15 downto 0);
@@ -102,7 +104,7 @@ begin
 
 	RACC : generic_register port map(DATA_OUT_INTERNAL, W(9), R_TO_MUX_ACC);
 
-	RI : generic_register generic map(9) port map(DATA_IN(8 downto 0), DONE_INTERNAL, INSTRUCTION);
+	RI : generic_register generic map(9) port map(DATA_IN(8 downto 0), FETCH, INSTRUCTION);
 
 	-- ALU
 	ALU : generic_alu port map(R_TO_ALU, DATA_OUT_INTERNAL, SEL_ALU, ALU_TO_ACC); -- A, B, SEL, O
@@ -111,7 +113,7 @@ begin
 	MUX : generic_mux_10 port map(R_TO_MUX_0, R_TO_MUX_1, R_TO_MUX_2, R_TO_MUX_3, R_TO_MUX_4, R_TO_MUX_5, R_TO_MUX_6, R_TO_MUX_7, R_TO_MUX_ACC, DATA_IN, SEL_MUX, DATA_OUT_INTERNAL); -- I0-I9, SEL, O
 
 	-- CONTROL UNIT
-	CONTROL : control_unit port map(INSTRUCTION, RUN, RESET, CLOCK, DONE, SEL_ALU, SEL_MUX, W); -- INSTRUCTION, RUN, RESET, CLOCK, DONE, SEL_ALU, SEL_MUX, W
+	CONTROL : control_unit port map(INSTRUCTION, RUN, RESET, CLOCK, DONE_INTERNAL, SEL_ALU, SEL_MUX, W, FETCH); -- INSTRUCTION, RUN, RESET, CLOCK, DONE, SEL_ALU, SEL_MUX, W
 
 	-- REDIRECTIONS
 	DATA_OUT <= DATA_OUT_INTERNAL;
