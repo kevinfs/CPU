@@ -127,14 +127,10 @@ begin
 					end if;
 				-- MV
 				when STATE_MV =>
-					SEL_MUX <= SEL_RY;
-					W <= W_RX;
 					DONE <= '1';
 					STATE <= STATE_IDLE;
 				-- MVI
 				when STATE_MVI =>
-					SEL_MUX <= SEL_DATA_IN;
-					W <= W_RX;
 					DONE <= '1';
 					STATE <= STATE_IDLE;
 				when STATE_ADD =>
@@ -168,6 +164,16 @@ begin
 			FETCH <= '1';
 		else
 			FETCH <= '0';
+		end if;
+		if STATE = STATE_MV then
+			SEL_MUX <= SEL_RY;
+			W <= W_RX;
+			DONE <= '1';
+		end if;
+		if STATE = STATE_MVI then
+			SEL_MUX <= SEL_DATA_IN;
+			W <= W_RX;
+			DONE <= '1';
 		end if;
 	end process;
 
