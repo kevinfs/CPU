@@ -1,5 +1,5 @@
 # CPU
-A 16 bit processor in VHDL written during a university course
+A 16 bit processor written in VHDL during a university course
 
 ## Compile
 
@@ -18,3 +18,8 @@ You can analyse it with ``gtkwave`` by doing ``gtkwave vcd/cpu_utest.vcd``
 
 Output VCD files will be inside ``vcd/``
 You can analyse those with ``gtkwave`` by doing ``gtkwave vcd/generic_alu_utest.vcd`` for example
+
+## Note
+
+It was developped in two evenings, so currently incomplete.
+A list of ``--TODO`` is available in the code.
