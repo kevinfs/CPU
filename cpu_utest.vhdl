@@ -26,8 +26,11 @@ begin
 				'1' after 14 ns, '0' after 15 ns, '1' after 16 ns, '0' after 17 ns,
 				'1' after 18 ns, '0' after 19 ns, '1' after 20 ns, '0' after 21 ns,
 				'1' after 22 ns, '0' after 23 ns, '1' after 24 ns, '0' after 25 ns,
-				'1' after 26 ns, '0' after 27 ns, '1' after 28 ns, '0' after 29 ns;
+				'1' after 26 ns, '0' after 27 ns, '1' after 28 ns, '0' after 29 ns,
+				'1' after 30 ns, '0' after 31 ns, '1' after 32 ns, '0' after 33 ns,
+				'1' after 34 ns, '0' after 35 ns, '1' after 36 ns, '0' after 37 ns;
 	DATA_IN <= 	"0000000101001000" after 1 ns, "0000000000000001" after 5 ns, -- MVI R1 1
-				"0000000101000000" after 16 ns, "0000000000000010" after 25 ns; -- MVI R0 2
+				"0000000101000000" after 16 ns, "0000000000000010" after 22 ns,
+				"0000000100010000" after 32 ns; -- MVI R0 2
 
 end architecture cpu_utest;
