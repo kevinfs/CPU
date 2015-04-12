@@ -3,7 +3,7 @@ all: half_adder half_adder_utest full_adder full_adder_utest generic_full_adder 
 # RUN THE SIMULATION
 
 run:
-	ghdl -r hello_world --vcd=vcd.vcd
+	ghdl -r cpu_utest --vcd=vcd/cpu_utest.vcd
 
 # RUN ALL TESTS
 
